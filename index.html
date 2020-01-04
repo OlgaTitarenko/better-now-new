@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
+</head>
+<body>
+  <header class="container-fluid head">
+    <div class="head-logo">
+      <img src="img/Logo.svg" alt="better now logo">
+      <h1>BetterNow</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container-sm login">
+      <div class="login-block row">
+        <div class="login-block__text col">
+          <p>Bem-vindo ao  <wbr> Better Now</p>
+          <h2>Por favor entre <wbr> com o seu email <wbr> e password</h2>
+        </div>
+
+        <div class="login-block__form col">
+          <form action="">
+            <div class="form-group">
+              <div class="form-group__email">
+                <input type="email"
+                       data-type="email"
+                       required
+                       placeholder="Email"
+                       class="form-control"
+                       name="email">
+                <span class="email-wrong">Formato de email inválido</span>
+              </div>
+
+              <div class="form-group__password">
+                <input type="password"
+                       placeholder="Password"
+                       class="form-control"
+                       required
+                       onclick="onClickPassword()"
+                       name="pass">
+                <img src="img/visibility-button.svg"
+                     alt="visibility password"
+                     class="password-icon"
+                     hidden
+                     onclick="isVisible()"
+                >
+                <img src="img/invisible.svg"
+                     alt="visibility password"
+                     class="password-icon-visible"
+                     hidden
+                     onclick="isVisible()"
+                >
+              </div>
+            </div>
+
+            <div class="btn-group-vertical d-flex align-items-center">
+              <button type="button" class="btn btn-google">
+                <img src="img/icon-google.svg" alt="button login with google"> INICIAR SESSÃO COM CONTA GOOGLE</button>
+              <p>ou</p>
+              <button type="button" class="btn btn-login">INICIAR SESSÃO</button>
+            </div>
+
+            <div class="forgot-pass">
+              <a href="#" data-toggle="modal" data-target="#changePass">Esqueci-me da <wbr> minha password</a>
+
+              <div class="modal" id="changePass">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Digite seu endereço de e-mail para o qual lhe enviaremos uma nova senha</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="form-group">
+                          <div class="form-group__email">
+                            <input type="email"
+                                   data-type="email"
+                                   required
+                                   placeholder="Email"
+                                   class="form-control"
+                                   name="email">
+                            <button type="button" class="btn btn-login" data-toggle="modal" data-dismiss="modal" data-target="#passChange">Enviar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal modal-done" id="passChange">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Sua nova senha foi enviada para o email especificado</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    const passwordDiv = document.querySelector('.form-group__password');
+    const passInput = passwordDiv.querySelector('INPUT');
+    const images = passwordDiv.querySelectorAll('IMG');
+    let visibility = false;
+    console.log(images);
+    function onClickPassword() {
+      images[0].hidden = false;
+    }
+    function isVisible() {
+      if (!visibility) {
+        images[0].hidden = true;
+        images[1].hidden = false;
+        passInput.type = 'text';
+        visibility = true;
+      } else {
+        images[0].hidden = false;
+        images[1].hidden = true;
+        passInput.type = 'password';
+        visibility = false;
+      }
+
+    }
+  </script>
+</body>
+</html>

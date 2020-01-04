@@ -1,0 +1,145 @@
+@font-face {
+}
+
+.head{
+    padding: 10px 13.5%;
+    box-shadow: 10px 10px 20px 0 rgba(168, 181, 223, 0.1);
+    background-color: #ffffff;
+}
+.head-logo h1{
+    position: absolute;
+    top:0;
+    left: -500px;
+}
+main{
+    height: 100%;
+    font-family: "Roboto Light", sans-serif;
+    color: #060b1b;
+    background-image: radial-gradient(circle at 50% 0, #c6c9e7, #edeeff 129%);
+}
+
+/*login*/
+.login{
+    padding-top: 189px;
+    padding-bottom: 189px;
+}
+.login-block{
+    border-radius: 3px;
+    box-shadow: 10px 10px 20px 0 rgba(191, 205, 229, 0.1), 10px 10px 20px 0 rgba(183, 188, 218, 0.12);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 85px;
+}
+.login-block__text p{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.login-block__text h2{
+    font-size: 46px;
+    font-weight: bold;
+}
+.login-block__form input{
+    border-radius: 3px;
+    background-color: #eaebf2;
+}
+.login-block__form .form-group{
+    font-size: 22px;
+}
+.login-block__form .form-group__email{
+    position: relative;
+    margin-bottom: 30px;
+}
+.form-group__email .email-wrong{
+    font-size: 12px;
+    color: #dc1818;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    display: none;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #dc1818;
+}
+input:invalid:not(:placeholder-shown) + .email-wrong {
+    display: block;
+}
+.form-group .form-group__password{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.form-group .form-group__password img{
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 20px;
+}
+
+.login-block__form .btn-group-vertical{
+    text-align: center;
+}
+.btn-group-vertical .btn-google{
+    border-radius: 3px;
+    border: solid 1px #2b336d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-group-vertical .btn-google img{
+    width: 22px;
+    margin-right: 10px;
+}
+.btn-group-vertical p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-login{
+    border-radius: 3px;
+    background-color: #617dff;
+    color: #ffffff;
+}
+
+.login-block__form .forgot-pass{
+    font-size: 18px;
+    color: #2b336d;
+    text-decoration: underline;
+    margin-top: 26px;
+}
+
+.modal{
+    top: 25%;
+}
+.modal-dialog{
+    max-width: 642px;
+}
+.modal-header{
+    border: none;
+    padding: 50px;
+}
+.modal-title{
+    font-size: 28px;
+    color: #2f2f2f;
+}
+.modal-body .form-group__email{
+    display: flex;
+    justify-content: space-around;
+}
+.modal-body .form-group__email input{
+    width: 50%;
+}
+.modal-body .form-group__email .btn-login{
+    width: 129px
+}
+
+.modal-done .modal-content{
+    border-radius: 3px;
+    box-shadow: 10px 10px 20px 0 rgba(187, 190, 223, 0.11);
+    background-color: #627dff;
+}
+.modal-done .modal-title{
+    color: #ffffff;
+}
+.modal-done .close{
+    color: #ffffff;
+}
