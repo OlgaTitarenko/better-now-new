@@ -50,7 +50,8 @@ main{
     position: relative;
     margin-bottom: 30px;
 }
-.form-group__email .email-wrong{
+.form-group__email .email-wrong,
+.form-group__password .pass-wrong{
     font-size: 12px;
     color: #dc1818;
     position: absolute;
@@ -58,12 +59,14 @@ main{
     top: 110%;
     display: none;
 }
-
 input:invalid:not(:placeholder-shown) {
     border-color: #dc1818;
 }
 input:invalid:not(:placeholder-shown) + .email-wrong {
     display: block;
+}
+.input-wrong{
+    border-color: #dc1818;
 }
 .form-group .form-group__password{
     position: relative;
@@ -142,4 +145,51 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 }
 .modal-done .close{
     color: #ffffff;
+}
+
+@media (max-width: 550px) {
+    .login{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .login-block{
+        background-color: rgba(0,0,0,0);
+        display: block;
+        padding: 30px;
+    }
+    .login-block__text h2{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .login-block__form input{
+        background-color: #ffffff;
+    }
+    .btn-group-vertical .btn-google{
+        background-color: #ffffff;
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .btn-group-vertical .btn-google img{
+        margin-right: 2px;
+    }
+
+    .modal-header,
+    .modal-body{
+        padding: 30px;
+    }
+    .modal-title{
+        font-size: 18px;
+    }
+    .modal-body .form-group__email{
+        display: block;
+    }
+    .modal-body .form-group__email input{
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #eaebf2;
+    }
+    .modal-body .form-group__email .btn-login{
+        float: right;
+    }
 }

@@ -27,7 +27,8 @@
           <form action="">
             <div class="form-group">
               <div class="form-group__email">
-                <input type="email"
+                <input id="input-login-email"
+                       type="email"
                        data-type="email"
                        required
                        placeholder="Email"
@@ -37,7 +38,11 @@
               </div>
 
               <div class="form-group__password">
-                <input type="password"
+
+                <!-- to display span in class "pass-wrong" change "display" to "block", and add class "input-wrong" to input -->
+
+                <input id="input-login-pass"
+                       type="password"
                        placeholder="Password"
                        class="form-control"
                        required
@@ -55,14 +60,18 @@
                      hidden
                      onclick="isVisible()"
                 >
+                <span class="pass-wrong">Verifique se a senha está correta</span>
               </div>
             </div>
 
             <div class="btn-group-vertical d-flex align-items-center">
-              <button type="button" class="btn btn-google">
-                <img src="img/icon-google.svg" alt="button login with google"> INICIAR SESSÃO COM CONTA GOOGLE</button>
+              <button id="btn-login" type="button" class="btn btn-login">INICIAR SESSÃO</button>
               <p>ou</p>
-              <button type="button" class="btn btn-login">INICIAR SESSÃO</button>
+              <button id="btn-login-google" type="button" class="btn btn-google">
+                <img src="img/icon-google.svg" alt="button login with google">
+                INICIAR SESSÃO COM CONTA GOOGLE
+              </button>
+
             </div>
 
             <div class="forgot-pass">
@@ -83,13 +92,15 @@
                       <form action="">
                         <div class="form-group">
                           <div class="form-group__email">
-                            <input type="email"
+                            <input id="input-change-pass-email"
+                                   type="email"
                                    data-type="email"
                                    required
                                    placeholder="Email"
                                    class="form-control"
                                    name="email">
-                            <button type="button" class="btn btn-login" data-toggle="modal" data-dismiss="modal" data-target="#passChange">Enviar</button>
+                            <span class="email-wrong">Formato de email inválido</span>
+                            <button id="btn_change_pass" type="button" class="btn btn-login" data-toggle="modal" data-dismiss="modal" data-target="#passChange">Enviar</button>
                           </div>
                         </div>
                       </form>
@@ -115,6 +126,8 @@
         </div>
       </div>
     </div>
+
+
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
