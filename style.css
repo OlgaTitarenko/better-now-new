@@ -1,15 +1,46 @@
-@font-face {
-}
 
 .head{
     padding: 10px 13.5%;
     box-shadow: 10px 10px 20px 0 rgba(168, 181, 223, 0.1);
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
 }
 .head-logo h1{
     position: absolute;
     top:0;
     left: -500px;
+}
+.head-user{
+    display: flex;
+    align-items: center;
+}
+.head-user__icon{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 14px;
+    object-fit: cover;
+}
+.user-name,
+.user-position{
+    display: block;
+}
+.user-name{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.06px;
+    color: #090909;
+}
+.user-position{
+    font-size: 11px;
+    letter-spacing: 0.05px;
+    color: #5f5a5a;
+}
+.user-menu{
+    transform: rotate(-90deg);
+    background-color: #ffffff;
+    border:none;
 }
 main{
     height: 100%;
@@ -31,7 +62,7 @@ main{
     align-items: center;
     padding: 85px;
 }
-.login-block__text p{
+.login-block__text h1{
     font-size: 24px;
     margin-bottom: 40px;
 }
@@ -192,4 +223,79 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     .modal-body .form-group__email .btn-login{
         float: right;
     }
+}
+
+.main-content{
+    padding: 27px 31px;
+}
+.welcome,
+.news,
+.call-nav{
+    background-color: #ffffff;
+    margin: 30px 15px;
+    box-sizing: border-box;
+}
+.welcome{
+    padding: 25px;
+}
+.news{
+    padding: 0;
+}
+.welcome p,
+.welcome span{
+    font-family: 'Roboto Medium';
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.13px;
+    text-align: justify;
+    color: #060b1b;
+    margin: 0;
+}
+.welcome span{
+    display: inline;
+    color: #3d62d7;
+    text-decoration: underline;
+}
+.welcome p{
+    display: inline-block;
+}
+
+.news-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    border: none;
+}
+.card-block{
+    padding: 15px;
+}
+.card-title{
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.08px;
+    color: #060b1b;
+}
+.card-footer{
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.news-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.card-autor{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05px;
+    padding-right: 15px;
+}
+.card-date{
+    font-size: 12px;
 }
