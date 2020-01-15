@@ -1,6 +1,8 @@
-
+ul{
+    padding: 0;
+}
 .head{
-    padding: 10px 13.5%;
+    padding: 10px 50px;
     box-shadow: 10px 10px 20px 0 rgba(168, 181, 223, 0.1);
     background-color: #ffffff;
     display: flex;
@@ -32,7 +34,8 @@
     letter-spacing: 0.06px;
     color: #090909;
 }
-.user-position{
+.user-position,
+.user-age{
     font-size: 11px;
     letter-spacing: 0.05px;
     color: #5f5a5a;
@@ -228,13 +231,17 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .main-content{
     padding: 27px 31px;
 }
-.welcome,
-.news,
-.call-nav{
+.aside>div{
+    box-shadow: 10px 10px 20px 0 rgba(168, 181, 223, 0.1), 10px 10px 12px 0 rgba(179, 187, 218, 0.13);
+}
+
+.background-and-size{
     background-color: #ffffff;
     margin: 30px 15px;
     box-sizing: border-box;
+    border-radius: 3px;
 }
+
 .welcome{
     padding: 25px;
 }
@@ -243,7 +250,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 }
 .welcome p,
 .welcome span{
-    font-family: 'Roboto Medium';
+    font-family: Roboto sans-serif;
     font-size: 28px;
     font-weight: 500;
     font-style: italic;
@@ -263,7 +270,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 
 .news-img{
     height: 100%;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
 }
 .card{
@@ -273,7 +280,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     padding: 15px;
 }
 .card-title{
-    font-family: "Roboto Medium";
+    font-family: Roboto sans-serif;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.08px;
@@ -298,4 +305,55 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 }
 .card-date{
     font-size: 12px;
+}
+
+.call-status>ul{
+    display: flex;
+    padding-top: 19px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.call-status li{
+    list-style: none;
+    height: 58px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    opacity: 0.65;
+}
+.call-status img:nth-child(1){
+  display: block;
+}
+.call-status img:nth-child(2){
+    display: none;
+}
+.call-status .active-status{
+    opacity: 1;
+}
+.call-status .active-status img:nth-child(1){
+  display: none;
+}
+.call-status .active-status img:nth-child(2){
+    display: block;
+}
+
+
+.last-consultations{
+    padding: 24px;
+}
+.last-consultations>h2{
+  font-family: Roboto sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b336d;
+    margin-bottom: 20px;
+}
+.last-consultations .head-user{
+    margin-bottom: 15px;
+}
+.last-consultations .see-all{
+    color: #617dff;
+    font-size: 14px;
 }

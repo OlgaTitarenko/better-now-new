@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
 </head>
@@ -137,14 +138,14 @@
 
     <div class="container-fluid main-content">
       <div class="row">
-        <div class="col-sm-8 ">
+        <div class="col-sm-9 ">
 
-          <div class="container-fluid welcome">
+          <div class="container-fluid welcome background-and-size">
             <p>
               Ola, <span class="user-name" id="user-name-welcome">Ann Green</span> ! Você pode ler estes artigos interessantes:
             </p>
           </div>
-          <div class="container-fluid news">
+          <div class="container-fluid news background-and-size">
             <div class="card">
               <div class="row ">
                 <div class="col-md-4">
@@ -165,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="container-fluid news">
+          <div class="container-fluid news background-and-size">
             <div class="card">
               <div class="row ">
                 <div class="col-md-4">
@@ -186,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div class="container-fluid news">
+          <div class="container-fluid news background-and-size">
             <div class="card">
               <div class="row ">
                 <div class="col-md-4">
@@ -208,17 +209,77 @@
             </div>
           </div>
 
-
         </div>
 
-        <div class="col-sm-4">
-          <div class="row call-nav">
-            buttons
+        <div class="col-sm-3 aside">
+          <div class="row call-status background-and-size">
+            <ul>
+              <li class="unavailable">
+                <div>
+                  <img src="img/status-1-simple.svg" alt="" >
+                  <img src="img/status-1-selected.svg" alt="" hidden>
+                </div>
+                <span>Indisponível</span>
+              </li>
+              <li>
+                <div class="status-img">
+                  <img src="img/status-2-simple.svg" alt="">
+                  <img src="img/status-2-selected.svg" alt=""  hidden>
+                </div>
+                <span>Ocupado</span>
+              </li>
+              <li>
+                <div>
+                  <img src="img/status-3-simple.svg" alt="" >
+                  <img src="img/status-3-selected.svg" alt="" hidden>
+                </div>
+                <span>On-call</span>
+              </li>
+              <li class="active-status">
+                <div>
+                  <img src="img/status-4-simple.svg" alt="" hidden>
+                  <img src="img/status-4-selected.svg" alt="">
+                </div>
+
+                <span>Disponível</span>
+              </li>
+            </ul>
           </div>
-          <div class="row last-consultations">
-            ÚLTIMAS CONSULTAS
+          <div class="last-consultations background-and-size">
+            <h2>ÚLTIMAS CONSULTAS</h2>
+            <ul>
+              <li class="head-user ">
+                <img src="img/doctor.jpg" alt="doctor picture" class="head-user__icon">
+                <div class="head-user__text">
+                  <span class="user-name" >António Mendes</span>
+                  <span class="user-age" >47 anos</span>
+                </div>
+              </li>
+              <li class="head-user ">
+                <img src="img/doctor.jpg" alt="doctor picture" class="head-user__icon">
+                <div class="head-user__text">
+                  <span class="user-name" >Sílvia Marques</span>
+                  <span class="user-position" >51 anos</span>
+                </div>
+              </li>
+              <li class="head-user ">
+                <img src="img/doctor.jpg" alt="doctor picture" class="head-user__icon">
+                <div class="head-user__text">
+                  <span class="user-name" >António Mendes</span>
+                  <span class="user-age" >47 anos</span>
+                </div>
+              </li>
+              <li class="head-user ">
+                <img src="img/doctor.jpg" alt="doctor picture" class="head-user__icon">
+                <div class="head-user__text">
+                  <span class="user-name" >Sílvia Marques</span>
+                  <span class="user-position" >51 anos</span>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="see-all" id="see-all-consultation">Ver Histórico de consultas</a>
           </div>
-          <div class="row waiting-customers">
+          <div class="row waiting-customers background-and-size">
             CLIENTES EM ESPERA
           </div>
 
