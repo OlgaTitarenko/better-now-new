@@ -230,6 +230,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 
 .main-content{
     padding: 27px 31px;
+    max-width: 1720px;
 }
 .aside>div{
     box-shadow: 10px 10px 20px 0 rgba(168, 181, 223, 0.1), 10px 10px 12px 0 rgba(179, 187, 218, 0.13);
@@ -309,17 +310,17 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 
 .call-status>ul{
     display: flex;
-    padding-top: 19px;
+    padding: 19px 0;
     width: 100%;
     justify-content: space-around;
     align-items: baseline;
 }
 .call-status li{
     list-style: none;
-    height: 58px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 12px;
     opacity: 0.65;
 }
@@ -343,17 +344,140 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .last-consultations{
     padding: 24px;
 }
-.last-consultations>h2{
+.last-consultations>h2,
+.waiting-customers>h2{
   font-family: Roboto sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #2b336d;
     margin-bottom: 20px;
 }
-.last-consultations .head-user{
+.last-consultations .head-user,
+.waiting-customers .waiting-user{
     margin-bottom: 15px;
 }
 .last-consultations .see-all{
     color: #617dff;
     font-size: 14px;
+}
+
+.waiting-customers{
+    padding: 24px 0 24px 24px;
+}
+.line-before{
+    position: relative;
+}
+.line-before:before{
+    content: ' ';
+    border-radius: 6.5px;
+    background-image: linear-gradient(to bottom, #b5c1f7 6%, #2b336d 188%);
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    z-index: 400;
+}
+.waiting-customers .waiting-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 18px;
+    position: relative;
+    margin-left: 8px;
+    background-color: #eaebf2;
+    border-radius: 50px 0 0 50px;
+}
+.waiting-customers .waiting-user:before{
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -8px;
+    width: 8px;
+    height: 8px;
+    background-color: #2b336d;
+
+    z-index: 400;
+}
+.waiting-customers .waiting-status{
+    font-size: 14px;
+    font-weight: 500;
+    color: #060b1b;
+    margin-right: 10px;
+}
+
+.customer{
+    display: flex;
+    justify-content: space-around;
+    padding: 26px 0;
+}
+.customer .customer-info{
+    display: flex;
+}
+.customer-info>img{
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 23px;
+}
+.customer-info h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: #2b336d;
+}
+.customer .customer-details{
+    display: flex;
+}
+.customer-details .customer-diagram{
+    width: 200px;
+}
+.customer-info .customer-sizes{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color: #090909;
+    font-weight: 500;
+}
+.list-diagram{
+    border-top-style: solid;
+    border-top-width: 7px;
+    border-image-source: linear-gradient(to right, #75f7d5 0%, #5ae3a3 19%, #59f04b 21%, #8cf044 39%, #e2f044 40%, #f4ec35 59%, #ffb03a 61%, #ffb03b 80%, #f96d40 81%, #ff0000 100%);
+    border-image-slice: 1;
+    position: relative;
+    display: flex;
+}
+.list-diagram>div{
+    display: inline-block;
+    min-width: 40px;
+    height: 50px;
+}
+.list-diagram .info img{
+    width: 7px;
+    display: block;
+    margin: 5px;
+}
+.list-diagram .info-persent{
+    font-size: 16px;
+    font-weight: bold;
+    color: #090909;
+}
+.customer-disease{
+    font-size: 16px;
+    padding-left: 20px;
+}
+.customer-disease>div{
+    margin-bottom: 14px;
+}
+.customer-disease span{
+    padding: 10px;
+    text-decoration: underline;
+}
+.customer-prescription h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.customer-prescription ul{
+    font-size: 16px;
+    padding-left: 20px;
 }
