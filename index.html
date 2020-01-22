@@ -25,116 +25,6 @@
     </div>
   </header>
   <main>
-    <section class="container-sm login" hidden>
-      <div class="login-block row">
-        <div class="login-block__text col">
-          <h1>Bem-vindo ao  <wbr> Better Now</h1>
-          <h2>Por favor entre <wbr> com o seu email <wbr> e password</h2>
-        </div>
-
-        <div class="login-block__form col">
-          <form action="">
-            <div class="form-group">
-              <div class="form-group__email">
-                <input id="input-login-email"
-                       type="email"
-                       data-type="email"
-                       required
-                       placeholder="Email"
-                       class="form-control"
-                       name="email">
-                <span class="email-wrong">Formato de email inválido</span>
-              </div>
-
-              <div class="form-group__password">
-
-                <!-- to display span in class "pass-wrong" change "display" to "block", and add class "input-wrong" to input -->
-
-                <input id="input-login-pass"
-                       type="password"
-                       placeholder="Password"
-                       class="form-control"
-                       required
-                       onclick="onClickPassword()"
-                       name="pass">
-                <img src="img/visibility-button.svg"
-                     alt="visibility password"
-                     class="password-icon"
-                     hidden
-                     onclick="isVisible()"
-                >
-                <img src="img/invisible.svg"
-                     alt="visibility password"
-                     class="password-icon-visible"
-                     hidden
-                     onclick="isVisible()"
-                >
-                <span class="pass-wrong">Verifique se a senha está correta</span>
-              </div>
-            </div>
-
-            <div class="btn-group-vertical d-flex align-items-center">
-              <button id="btn-login" type="button" class="btn btn-login">INICIAR SESSÃO</button>
-              <p>ou</p>
-              <button id="btn-login-google" type="button" class="btn btn-google">
-                <img src="img/icon-google.svg" alt="button login with google">
-                INICIAR SESSÃO COM CONTA GOOGLE
-              </button>
-
-            </div>
-
-            <div class="forgot-pass">
-              <a href="#" data-toggle="modal" data-target="#changePass">Esqueci-me da <wbr> minha password</a>
-
-              <div class="modal" id="changePass">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title">Digite seu endereço de e-mail para o qual lhe enviaremos uma nova senha</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                      <form action="">
-                        <div class="form-group">
-                          <div class="form-group__email">
-                            <input id="input-change-pass-email"
-                                   type="email"
-                                   data-type="email"
-                                   required
-                                   placeholder="Email"
-                                   class="form-control"
-                                   name="email">
-                            <span class="email-wrong">Formato de email inválido</span>
-                            <button id="btn_change_pass" type="button" class="btn btn-login" data-toggle="modal" data-dismiss="modal" data-target="#passChange">Enviar</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="modal modal-done" id="passChange">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title">Sua nova senha foi enviada para o email especificado</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </section>
 
     <div class="container-fluid main-content">
       <div class="row">
@@ -145,6 +35,7 @@
               Ola, <span class="user-name" id="user-name-welcome">Ann Green</span> ! Você pode ler estes artigos interessantes:
             </p>
           </div>
+
           <div id="block-news" hidden>
             <div class="container-fluid news background-and-size">
               <div class="card">
@@ -210,7 +101,8 @@
               </div>
             </div>
           </div>
-          <div class="container-fluid background-and-size customer">
+
+          <div id="customer" class="container-fluid background-and-size customer" >
             <div class="customer-info">
               <img src="img/doctor.jpg" alt="customer photo">
               <div>
