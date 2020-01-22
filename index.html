@@ -30,7 +30,7 @@
       <div class="row">
         <div class="col-sm-9 ">
 
-          <div class="container-fluid welcome background-and-size" id="block-welcome">
+          <div class="container-fluid welcome background-and-size" id="block-welcome" hidden>
             <p>
               Ola, <span class="user-name" id="user-name-welcome">Ann Green</span> ! Você pode ler estes artigos interessantes:
             </p>
@@ -171,6 +171,58 @@
 
           </div>
 
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="timeline-customers background-and-size">
+                <h2 class="h2-style">Últimas Consultas</h2>
+                <ul class="line-before">
+                  <li class="timeline-item year">
+                    <p class=" user-name timeline-item__date " >2019</p>
+                  </li>
+                  <li class="timeline-item">
+                    <p class=" user-name timeline-item__date" >24 Feb 2019</p>
+                    <p class="user-age timeline-item__doctor " >M.D. Ann Green</p>
+                  </li>
+                  <li class="timeline-item">
+                    <p class=" user-name timeline-item__date" >24 Feb 2019</p>
+                    <p class="user-age timeline-item__doctor " >M.D. Ann Green</p>
+                  </li>
+                  <li class="timeline-item">
+                    <p class="user-name timeline-item__date " >24 Feb 2019</p>
+                    <p class="user-age timeline-item__doctor " >M.D. Ann Green</p>
+                  </li>
+                  <li class="timeline-item year">
+                    <p class="user-name timeline-item__date " >2019</p>
+                  </li>
+                  <li class="timeline-item">
+                    <p class=" user-name timeline-item__date" >24 Feb 2019</p>
+                    <p class="user-age timeline-item__doctor " >M.D. Ann Green</p>
+                  </li>
+                  <li class="timeline-item">
+                    <p class=" user-name timeline-item__date" >24 Feb 2019</p>
+                    <p class="user-age timeline-item__doctor " >M.D. Ann Green</p>
+                  </li>
+                  <li class="timeline-item">
+                    <p class=" user-name timeline-item__date" >24 Feb 2019</p>
+                    <p class="user-age timeline-item__doctor " >M.D. Ann Green</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-9">
+              <div class="container-fluid background-and-size new-note">
+                <form action="">
+                  <input type="text" placeholder="Create a note" name="new-note"/>
+                  <button>Send</button>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+
+
         </div>
 
         <div class="col-sm-3 aside">
@@ -209,7 +261,7 @@
           </div>
 
           <div class="last-consultations background-and-size">
-            <h2>ÚLTIMAS CONSULTAS</h2>
+            <h2 class="h2-style">ÚLTIMAS CONSULTAS</h2>
             <ul>
               <li class="head-user ">
                 <img src="img/doctor.jpg" alt="user picture" class="head-user__icon">
@@ -244,7 +296,7 @@
           </div>
 
           <div class="waiting-customers background-and-size">
-            <h2>CLIENTES EM ESPERA</h2>
+            <h2  class="h2-style">CLIENTES EM ESPERA</h2>
             <ul class="line-before">
               <li class="waiting-user">
                 <div class="head-user">
@@ -302,8 +354,6 @@
         </div>
       </div>
 
-
-
       </div>
 
 
@@ -315,28 +365,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-  <script>
-    const passwordDiv = document.querySelector('.form-group__password');
-    const passInput = passwordDiv.querySelector('INPUT');
-    const images = passwordDiv.querySelectorAll('IMG');
-    let visibility = false;
-    function onClickPassword() {
-      images[0].hidden = false;
-    }
-    function isVisible() {
-      if (!visibility) {
-        images[0].hidden = true;
-        images[1].hidden = false;
-        passInput.type = 'text';
-        visibility = true;
-      } else {
-        images[0].hidden = false;
-        images[1].hidden = true;
-        passInput.type = 'password';
-        visibility = false;
-      }
 
-    }
-  </script>
 </body>
 </html>
