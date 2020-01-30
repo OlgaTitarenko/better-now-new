@@ -1,5 +1,9 @@
 ul{
     padding: 0;
+    list-style: none;
+}
+li{
+    display: block;
 }
 .head{
     padding: 10px 50px;
@@ -45,6 +49,13 @@ ul{
     background-color: #ffffff;
     border:none;
 }
+.dropdown-item{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+    color: #0e0e0e;
+}
+
 main{
     height: 100%;
     font-family: "Roboto Light", sans-serif;
@@ -544,3 +555,23 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     font-weight: 500;
     padding: 6px 20px;
 }
+
+.one-note .user-name{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+.one-note .sub-title{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+.one-note .text{
+    font-size: 18px;
+    color: black;
+}
+.one-note .date{
+    font-size: 18px;
+    font-weight: bold;
+}
+

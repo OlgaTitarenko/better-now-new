@@ -15,17 +15,30 @@
       <img src="img/Logo.svg" alt="better now logo">
       <h1>BetterNow</h1>
     </div>
+    <div class="dropdown">
     <div class="head-user ">
       <img src="img/doctor.jpg" alt="doctor picture" class="head-user__icon">
       <div class="head-user__text">
         <span class="user-name" id="user-name">M.D. Ann Green</span>
         <span class="user-position" id="user-position">Medicina Geral e Familiar</span>
       </div>
-      <button class="user-menu" id="user-menu-btn"><</button>
+      <button
+                class="user-menu dropdown-toggle"
+                id="user-menu-btn"
+                data-toggle="dropdown"
+      ></button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">HELP
+          <img src="img/information-2.svg" alt="">
+        </a>
+        <a class="dropdown-item" href="#">LOG OUT
+          <img src="img/logout.svg" alt="">
+        </a>
+      </div>
+    </div>
     </div>
   </header>
   <main>
-
     <div class="container-fluid main-content">
       <div class="row">
         <div class="col-sm-9 ">
@@ -216,12 +229,53 @@
                   <input type="text" placeholder="Create a note" name="new-note"/>
                   <button>Send</button>
                 </form>
-
               </div>
+
+              <ul>
+                <li class="container-fluid background-and-size one-note">
+                  <div class="media p-3">
+                    <div class="media-body">
+                      <h4 class="user-name"> M.D. Ann Green </h4>
+                      <h6 class="sub-title">Medicina Geral e Familiar</h6>
+                      <p class="text">
+                        Cellulite is fat that is caught between bands of connective tissue directly beneath the skin that creates a lumpy, bumpy orange peel appearance mostly on the hips, thighs and backsides of most women.
+                      </p>
+                      <a href="#" class="media-footer"> <img src="img/paper-clip-outline-icon.svg" alt=""> 1 Prescrições Associadas</a>
+                    </div>
+                    <span class="date">16:40 4 Feb 2019</span>
+                  </div>
+                </li>
+                <li class="container-fluid background-and-size one-note">
+                  <div class="media p-3">
+                    <div class="media-body">
+                      <h4 class="user-name"> M.D. Ann Green </h4>
+                      <h6 class="sub-title">Medicina Geral e Familiar</h6>
+                      <p class="text">
+                        Cellulite is fat that is caught between bands of connective tissue directly beneath the skin that creates a lumpy, bumpy orange peel appearance mostly on the hips, thighs and backsides of most women.
+                      </p>
+                      <a href="#" class="media-footer"> <img src="img/paper-clip-outline-icon.svg" alt=""> 1 Prescrições Associadas</a>
+                    </div>
+                    <span class="date">16:40 4 Feb 2019</span>
+                  </div>
+                </li>
+                <li class="container-fluid background-and-size one-note">
+                  <div class="media p-3">
+                    <div class="media-body">
+                      <h4 class="user-name"> M.D. Ann Green </h4>
+                      <h6 class="sub-title">Medicina Geral e Familiar</h6>
+                      <p class="text">
+                        Cellulite is fat that is caught between bands of connective tissue directly beneath the skin that creates a lumpy, bumpy orange peel appearance mostly on the hips, thighs and backsides of most women.
+                      </p>
+                      <a href="#" class="media-footer"> <img src="img/paper-clip-outline-icon.svg" alt=""> 1 Prescrições Associadas</a>
+                    </div>
+                    <span class="date">16:40 4 Feb 2019</span>
+                  </div>
+                </li>
+              </ul>
+
             </div>
 
           </div>
-
 
         </div>
 
