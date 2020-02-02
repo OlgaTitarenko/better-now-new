@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="94px" viewBox="0 0 92 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Cancel call bttn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="27" cy="27" r="27"></circle>
+        <filter x="-46.3%" y="-46.3%" width="229.6%" height="229.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="10" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.601251132   0 0 0 0 0.601251132   0 0 0 0 0.601251132  0 0 0 0.106288243 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="BN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Call-pop-up-1" transform="translate(-521.000000, -363.000000)">
+            <g id="Group-4" transform="translate(424.000000, 200.000000)">
+                <g id="Cancel-call-bttn" transform="translate(106.000000, 173.000000)">
+                    <g id="Group-2">
+                        <g id="Oval-Copy-8">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FF5858" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M42.3274548,35.7285544 L37.6944227,31.0845063 C36.7716086,30.1633157 35.2434104,30.1913039 34.2884482,31.1487754 L31.9543067,33.4876874 C31.8068392,33.406228 31.6542003,33.3211405 31.4937184,33.2308701 C30.0197325,32.4123027 28.0023316,31.2903575 25.8794368,29.1610977 C23.7502502,27.0273459 22.6298072,25.0022641 21.8105909,23.5239882 C21.7241444,23.3673754 21.6413178,23.2163776 21.5595255,23.0729814 L23.1260772,21.5052124 L23.8962526,20.7323418 C24.85268,19.7734881 24.8790535,18.2422593 23.9583941,17.3183908 L19.325362,12.6738244 C18.4047026,11.7512517 16.8758149,11.7792399 15.9193875,12.7380935 L14.6136404,14.0543146 L14.6493222,14.0898181 C14.2114875,14.6497541 13.8456197,15.295555 13.5733521,15.9919765 C13.3223728,16.6548813 13.1661141,17.2874656 13.0946643,17.9213456 C12.4829024,23.0044795 14.8004958,27.6500825 21.090146,33.9540704 C29.7843532,42.6673725 36.7907423,42.0091324 37.0930033,41.9769978 C37.7513067,41.89813 38.3822024,41.7404806 39.0233544,41.4909195 C39.7121683,41.2212311 40.3560783,40.8550526 40.9144037,40.4171761 L40.9429319,40.4425728 L42.2657442,39.1443195 C43.2201893,38.1856385 43.2476833,36.6538914 42.3274548,35.7285544 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero" transform="translate(28.000000, 27.000000) scale(1, -1) translate(-28.000000, -27.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

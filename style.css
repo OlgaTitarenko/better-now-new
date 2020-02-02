@@ -463,14 +463,14 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .customer .customer-info{
     display: flex;
 }
-.customer-info>img{
+.customer-info__img{
     width: 74px;
     height: 74px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 23px;
 }
-.customer-info h3{
+.customer-info__name{
     font-size: 22px;
     font-weight: bold;
     color: #2b336d;
@@ -575,3 +575,56 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     font-weight: bold;
 }
 
+.customer-call{
+    background-image: radial-gradient(circle at 50% 108%, rgba(171,177,210,0.45), rgba(126,134,186,0.45) 73%);
+    top: 0;
+    display: none;
+}
+.customer-call__hide{
+    display: none;
+}
+.on-call-modal{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 25%;
+    left: calc(50% - 175px);
+    width: 350px;
+    border-radius: 3px;
+    box-shadow: 10px 10px 20px 0 rgba(40, 46, 61, 0.13);
+    padding: 30px;
+}
+.on-call-modal .customer-info__img{
+    margin: 14px;
+}
+.on-call-modal  button{
+    background-color: white;
+    border: none;
+}
+.on-call-modal .opacity{
+    opacity: 0.5;
+}
+.call-ending{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.call-ending-display{
+    display: flex;
+}
+.call-ending p{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: justify;
+    color: #ff5858;
+}
+.call-ending .reject-call{
+    border-radius: 3px;
+    box-shadow: 5px 8px 10px 0 rgba(123, 123, 123, 0.1);
+    background-color: #ff5858;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.08px;
+    padding: 10px 15px;
+}
