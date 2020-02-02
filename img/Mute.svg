@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="83px" viewBox="0 0 82 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Mute bttn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-22.8%" y="-12.2%" width="153.2%" height="124.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="10" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.522984601   0 0 0 0 0.522984601   0 0 0 0 0.522984601  0 0 0 0.124016608 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="20" cy="20" r="20"></circle>
+        <filter x="-30.0%" y="-25.0%" width="170.0%" height="170.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="2" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.532212409   0 0 0 0 0.532212409   0 0 0 0 0.532212409  0 0 0 0.164199082 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="BN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-On-call-reading-notes" transform="translate(-1048.000000, -636.000000)">
+            <g id="Group-3" filter="url(#filter-1)" transform="translate(907.000000, 222.000000)">
+                <g id="Group-2" transform="translate(0.000000, 413.000000)">
+                    <g id="Mute-bttn" transform="translate(151.000000, 11.000000)">
+                        <g id="Group-2">
+                            <g id="Oval">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                            <g id="cut-microphone" transform="translate(11.818182, 10.000000)" fill="#3C3C3C" fill-rule="nonzero">
+                                <path d="M7.61360244,14.0093932 L7.84108609,14.0093932 C9.98873207,14.0093932 11.8726258,12.1637755 11.8726258,10.0596924 L11.8726258,5.21240815 L15.2450352,1.6412393 C15.5243822,1.34542838 15.5243822,0.865767745 15.2450352,0.56988107 C14.9656166,0.274070146 14.5127953,0.274070146 14.2333052,0.56988107 L11.7844222,3.16316946 C11.3891872,1.40633285 9.71575169,0 7.84108609,0 L7.61360244,0 C5.46595646,0 3.58206275,1.84561776 3.58206275,3.94954928 L3.58206275,10.0596924 C3.58206275,10.5695781 3.69351543,11.0640103 3.89174097,11.5209454 L3.16279178,12.2929324 C2.82879141,11.6304825 2.64859288,10.9038709 2.64859288,10.1707446 C2.64859288,9.85698053 2.4084474,9.60260586 2.11207483,9.60260586 C1.81570226,9.60260586 1.57555678,9.85698053 1.57555678,10.1707446 C1.57555678,11.2043785 1.85797989,12.2236194 2.37668553,13.1252935 L0.209510298,15.4201954 C-0.069836766,15.7160064 -0.069836766,16.195667 0.209510298,16.4915537 C0.349219598,16.639497 0.532279556,16.7134308 0.715339514,16.7134308 C0.898471008,16.7134308 1.08145943,16.639497 1.22116873,16.4915537 L3.2715261,14.3203545 C3.35035849,14.4026968 3.43140848,14.4833725 3.5151053,14.5617756 C4.53913941,15.5209454 5.85904535,16.1080979 7.19075468,16.2111204 L7.19075468,18.8637224 L4.95926881,18.8637224 C4.66289624,18.8637224 4.42275076,19.1180971 4.42275076,19.4318612 C4.42275076,19.7456253 4.66289624,20 4.95926881,20 L11.0159853,20 C11.3123579,20 11.5525033,19.7456253 11.5525033,19.4318612 C11.5525033,19.1180971 11.3123579,18.8637224 11.0159853,18.8637224 L8.26386231,18.8637224 L8.26386231,16.2111204 C9.59564318,16.1080221 10.9154776,15.5208696 11.9395117,14.5617756 C13.172144,13.4072419 13.8791317,11.8067571 13.8791317,10.1707446 C13.8791317,9.85698053 13.6389863,9.60260586 13.3426137,9.60260586 C13.0462411,9.60260586 12.8060956,9.85698053 12.8060956,10.1707446 C12.8060956,11.4814029 12.2311629,12.771684 11.2285895,13.710628 C10.290756,14.5890463 9.05755134,15.0928718 7.84516363,15.0928718 L7.60945336,15.0928718 C6.39713718,15.0928718 5.16393256,14.5890463 4.22602748,13.710628 C4.15878388,13.6476782 4.0937579,13.5827589 4.03044877,13.5167033 L4.7378657,12.7675176 C5.48198046,13.5236724 6.51273894,14.0093932 7.61360244,14.0093932 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

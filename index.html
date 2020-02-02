@@ -427,10 +427,32 @@
         </div>
       </div>
 
+      <div class="modal customer-call-start"> 
+        <div class="video-full">
+          <a href="#">
+            <img src="img/Arrow.svg" alt="">
+            Voltar à consulta</a>
+          <div class="customer-call-video">
+            <video class="video-customer" poster="img/doctor.jpg"></video>
+            <button class="exit-full-video">
+              <img src="img/full-screen-icon.svg" alt="">
+            </button>
+            <div class="video-info">
+              <p class="video-time" id="video-time">12:04</p>
+              <div class="video-btns">
+               <button class="video-mute">
+                  <img src="img/Mute.svg" alt="">
+                </button>
+                <button class="video-stop">
+                  <img src="img/Cancel-call.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <video class="video-doctor" poster="img/doctor.jpg"></video>
+        </div>
       </div>
-
-
-
+      </div>
 
   </main>
 
@@ -446,6 +468,10 @@
     $("#reject-call").click(function () {
       $(".customer-call").toggleClass("customer-call__hide")
     });
+    $('#start-call').click(function () {
+      $(".customer-call-start").toggleClass("customer-call-start__display")
+    });
+
   </script>
 
 </body>

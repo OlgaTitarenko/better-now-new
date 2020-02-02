@@ -531,7 +531,6 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     padding-left: 20px;
 }
 
-
 .new-note{
   padding-left: 0;
 }
@@ -628,3 +627,63 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     letter-spacing: 0.08px;
     padding: 10px 15px;
 }
+
+.customer-call-start{
+    top: 0;
+    background-image: radial-gradient(circle at 50% 108%, rgba(171,177,210,0.85), rgba(126,134,186,0.85) 73%);
+}
+.customer-call-start__display{
+    display: block;
+}
+.video-full{
+    position: relative;
+    top: 87px;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.video-full a{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.video-full .customer-call-video{
+    width: 50%;
+    position: relative;
+}
+.video-full .customer-call-video .video-customer{
+    width: 100%;
+}
+.video-full .customer-call-video .video-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    background-color: #617dff;
+    padding: 0 20px;
+}
+.customer-call-video .video-time{
+    margin-bottom: 0;
+    color: white;
+    font-size: 38px;
+}
+.customer-call-video .video-btns button{
+    border: none;
+    background-color: #617dff;
+}
+.customer-call-video .video-btns img{
+    width: 64px;
+}
+.customer-call-video .exit-full-video{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+
+
+
