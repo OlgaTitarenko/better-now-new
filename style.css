@@ -5,6 +5,9 @@ ul{
 li{
     display: block;
 }
+.hide{
+    display: none;
+}
 .head{
     padding: 10px 50px;
     box-shadow: 10px 10px 20px 0 rgba(168, 181, 223, 0.1);
@@ -12,10 +15,17 @@ li{
     display: flex;
     justify-content: space-between;
 }
+
 .head-logo h1{
     position: absolute;
     top:0;
     left: -500px;
+}
+.head-logo{
+    width: 30%;
+}
+.head-logo img{
+    width: 100%;
 }
 .head-user{
     display: flex;
@@ -31,6 +41,7 @@ li{
 .user-name,
 .user-position{
     display: block;
+    padding-right: 10px;
 }
 .user-name{
     font-size: 14px;
@@ -46,7 +57,7 @@ li{
 }
 .user-menu{
     transform: rotate(-90deg);
-    background-color: #ffffff;
+    background-color: inherit;
     border:none;
 }
 .dropdown-item{
@@ -240,7 +251,6 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 }
 
 .main-content{
-    padding: 27px 31px;
     max-width: 1720px;
 }
 .aside>div{
@@ -386,7 +396,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     position: absolute;
     width: 8px;
     height: 100%;
-    z-index: 400;
+    z-index: 50;
 }
 .waiting-customers .waiting-user{
     display: flex;
@@ -407,8 +417,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     width: 8px;
     height: 8px;
     background-color: #2b336d;
-
-    z-index: 400;
+    z-index: 51;
 }
 .waiting-customers .waiting-status{
     font-size: 14px;
@@ -433,7 +442,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     width: 8px;
     height: 8px;
     background-color: #2b336d;
-    z-index: 400;
+    z-index: 51;
 }
 .timeline-customers .year:before{
     display: none;
@@ -458,7 +467,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .customer{
     display: flex;
     justify-content: space-around;
-    padding: 26px 0;
+    padding: 26px 10px;
 }
 .customer .customer-info{
     display: flex;
@@ -534,7 +543,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .new-note{
   padding-left: 0;
 }
-.new-note input{
+.new-note textarea{
     border: none;
     height: 100%;
     width: 85%;
@@ -543,9 +552,10 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     color: #090909;
     font-size: 20px;
 }
-.new-note button{
+.new-note-button{
     border-radius: 3px;
     box-shadow: 6px 6px 10px 0 rgba(185, 195, 223, 0.13);
+    border: none;
     background-color: #617dff;
     letter-spacing: 0.06px;
     text-align: justify;
@@ -553,6 +563,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     font-size: 14px;
     font-weight: 500;
     padding: 6px 20px;
+    margin-bottom: 10px;
 }
 
 .one-note .user-name{
@@ -577,7 +588,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .customer-call{
     background-image: radial-gradient(circle at 50% 108%, rgba(171,177,210,0.45), rgba(126,134,186,0.45) 73%);
     top: 0;
-    display: none;
+    display: block;
 }
 .customer-call__hide{
     display: none;
@@ -630,10 +641,33 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 
 .customer-call-start{
     top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: auto;
+    position: fixed;
     background-image: radial-gradient(circle at 50% 108%, rgba(171,177,210,0.85), rgba(126,134,186,0.85) 73%);
 }
 .customer-call-start__display{
     display: block;
+}
+.customer-call-start-small{
+    left: 75%;
+    width: 25%;
+    top: 70px;
+    background-image: none;
+}
+.customer-call-start-small .video-full{
+    flex-direction: column-reverse;
+}
+.customer-call-start-small .video-full .customer-call-video{
+    width: 100%;
+    margin-top: 20px ;
+}
+.customer-call-start-small .video-full a{
+    display: none;
 }
 .video-full{
     position: relative;
@@ -662,16 +696,20 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     justify-content: space-between;
     border-radius: 3px;
     background-color: #617dff;
-    padding: 0 20px;
+    padding-left: 20px;
 }
 .customer-call-video .video-time{
     margin-bottom: 0;
     color: white;
     font-size: 38px;
 }
+.customer-call-video .video-btns{
+    display: flex;
+    justify-content: flex-end;
+}
 .customer-call-video .video-btns button{
     border: none;
-    background-color: #617dff;
+    background-color: inherit;
 }
 .customer-call-video .video-btns img{
     width: 64px;
@@ -683,7 +721,149 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     border: none;
     background-color: rgba(0,0,0,0);
 }
+.disconnect-info{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 10px 10px 20px 0 rgba(174, 178, 211, 0.1);
+    background-color: #617dff;
+    color: white;
+}
+.disconnect-info p{
+    margin: 0;
+}
+.end-of-consultation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    background-image: radial-gradient(circle at 50% 108%, rgba(171,177,210,0.55), rgba(126,134,186,0.55) 73%);
+}
+.end-of-consultation .background-and-size{
+    width: 456px;
+    margin: 200px auto;
+    padding: 20px;
+}
+.bottom-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-buttons span{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.btn-end{
+    border-radius: 3px;
+    box-shadow: 0 10px 20px 0 rgba(190, 190, 226, 0.1);
+    background-color: #efefef;
+    border: none;
+    padding: 6px 20px;
+}
 
 
+@media (max-width: 768px) {
+    .head{
+        padding: 10px;
+    }
+    .background-and-size{
+        margin: 10px;
+    }
+    .welcome{
+        padding: 10px;
+    }
+    .welcome p{
+        font-size: 18px;
+    }
+    .customer{
+        flex-direction: column;
+    }
+    .customer .customer-info__img{
+        display: none;
+    }
+    .customer .customer-details{
+        flex-direction: column;
+    }
+    .customer-sizes{
+        margin-bottom: 10px;
+    }
+    .customer-sizes>span{
+        padding-right: 5px;
+    }
+    .customer-details .customer-diagram {
+         width: auto;
+        display: flex;
+    }
+    .list-diagram{
+        border: none;
+    }
+    .list-diagram>div{
+        min-width: 0;
+        height: auto;
+    }
+    .list-diagram .info>img{
+        display: none;
+    }
+    .customer-disease{
+        padding-left: 0;
+    }
+    .new-note textarea{
+        width: 60%;
+    }
+    .media-body{
+        flex: auto;
+    }
 
-
+    .on-call-modal{
+        width: 290px;
+        left: calc(50% - 160px);
+        padding: 20px;
+    }
+    .call-ending p{
+        font-size: 21px;
+        text-align: center;
+    }
+    .video-full{
+        top:0;
+        left: 10px;
+        width: 90%;
+    }
+    .video-full a{
+        display: none;
+    }
+    .video-doctor{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 30%;
+    }
+    .video-full .customer-call-video{
+        width: 100%;
+    }
+    .video-full .customer-call-video .video-info{
+        padding-left: 0;
+    }
+    .customer-call-start .customer-info__name{
+        float: left;
+        justify-content: space-between;
+    }
+    .customer-call-start .customer-details{
+        font-size: 15px;
+    }
+    .customer-details-video{
+        display: none;
+    }
+    .customer-details-video__show{
+        display: block;
+    }
+    .video-full .customer-call-video .video-info{
+        margin-top: -70px;
+        position: relative;
+        background-color: inherit;
+    }
+}

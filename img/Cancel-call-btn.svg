@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="123px" height="87px" viewBox="0 0 123 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Cancel call bttn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-21.0%" y="-13.5%" width="141.9%" height="128.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="10" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.0209710166   0 0 0 0 0.416326993  0 0 0 0.122022509 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-58.7%" y="-58.7%" width="217.4%" height="217.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0192266309   0 0 0 0 0   0 0 0 0 0.368121603  0 0 0 0.120492788 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="BN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Full-size-call-2-/-open-info" transform="translate(-666.000000, -713.000000)">
+            <g id="Group-4" transform="translate(322.000000, 87.000000)">
+                <g id="Group-3" filter="url(#filter-1)">
+                    <g id="Group-6" transform="translate(0.000000, 642.000000)">
+                        <g id="Cancel-call-bttn" transform="translate(372.000000, 12.000000)">
+                            <g id="Group-2" filter="url(#filter-2)">
+                                <circle id="Oval-Copy-8" fill="#FF5858" cx="23" cy="23" r="23"></circle>
+                                <path d="M36.0567207,30.4354352 L32.1100638,26.4793943 C31.3239628,25.6946764 30.0221644,25.7185181 29.2086781,26.534142 L27.2203353,28.5265485 C27.0947148,28.4571572 26.9646892,28.3846753 26.8279824,28.3077782 C25.5723647,27.6104801 23.8538381,26.654749 22.0454462,24.840935 C20.2316946,23.0232946 19.2772431,21.298225 18.5793922,20.0389529 C18.5057526,19.905542 18.4351967,19.7769142 18.3655217,19.6547619 L19.6999917,18.319255 L20.356067,17.6608838 C21.1708015,16.8440825 21.1932678,15.5397023 20.4090024,14.7527032 L16.4623454,10.7962208 C15.67808,10.0103255 14.3756942,10.0341673 13.5609597,10.8509686 L12.4486566,11.9721939 L12.4790522,12.0024376 C12.1060819,12.4794202 11.7944168,13.0295469 11.5624851,13.6227948 C11.348688,14.1874915 11.2155787,14.7263596 11.154714,15.2663314 C10.6335835,19.5964085 12.6078297,23.5537739 17.9656799,28.9238377 C25.3718565,36.3462803 31.3402619,35.7855572 31.5977436,35.7581834 C32.1585205,35.6909996 32.6959502,35.5567057 33.2421167,35.3441166 C33.8288841,35.114382 34.3774,34.8024523 34.8530105,34.4294463 L34.8773124,34.4510805 L36.0041525,33.345161 C36.8171983,32.5285069 36.8406191,31.2236852 36.0567207,30.4354352 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero" transform="translate(23.851852, 23.000000) scale(1, -1) translate(-23.851852, -23.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
