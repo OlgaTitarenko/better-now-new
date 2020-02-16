@@ -42,7 +42,7 @@
     <div class="container-fluid main-content">
       <div class="row flex-xl-row-reverse flex-lg-row-reverse justify-content-md-center justify-content-center">
 
-        <div class="col-xl-3 col-lg-4 col-md-8 col-sm-9 col-12 aside right-block">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-9 col-12 aside right-block">
           <div class="call-status background-and-size">
             <ul>
               <li class="unavailable">
@@ -172,13 +172,13 @@
 
         <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12">
 
-          <div class="welcome background-and-size" id="block-welcome" >
+          <div class="welcome background-and-size" id="block-welcome" hidden>
             <p>
               Ola, <span class="user-name" id="user-name-welcome">Ann Green</span> ! Você pode ler estes artigos interessantes:
             </p>
           </div>
 
-          <div id="block-news" >
+          <div id="block-news" hidden>
             <div class="news background-and-size">
               <div class="card">
                 <div class="row ">
@@ -352,10 +352,10 @@
               </div>
             </div>
 
-            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-122">
+            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12 notes">
               <div class=" background-and-size new-note">
-                <form action="">
-                  <input type="text" placeholder="Create a note" name="new-note"/>
+                <form >
+                  <textarea placeholder="Create a note" name="new-note"></textarea>
                   <button class="new-note-button">Send</button>
                 </form>
               </div>
@@ -434,8 +434,8 @@
       </div>
 
       <div class="customer-call-start">
-        <div class="customer-info-video background-and-size">
-          <div class="customer-info">
+        <div class="customer-info-video background-and-size d-xl-none d-lg-none d-md-none">
+          <div class="customer-info ">
             <div>
               <div class="w-100 d-flex justify-content-between">
                 <h3 class="customer-info__name">Ricardo Gonzales</h3>
@@ -483,6 +483,11 @@
 
           </div>
         </div>
+        <div class="tabs">
+          <button class="show-video active">Video</button>
+          <button class="show-info">Info</button>
+          <button class="show-notes">Notes</button>
+        </div>
         <div class="video-full">
           <a href="#">
             <img src="img/Arrow.svg" alt="">
@@ -490,7 +495,7 @@
           <div class="customer-call-video">
             <video class="video-customer" poster="img/doctor.jpg"></video>
             <button class="exit-full-video">
-              <img src="img/fullscreen-exit.svg" alt="">
+              <img class="exit-full-video-img" src="img/fullscreen-exit.svg" alt="">
             </button>
             <div class="video-info">
               <p class="video-time" id="video-time">12:04</p>
@@ -557,11 +562,65 @@
     });
 
     $(".exit-full-video").click(function () {
+
       $(".customer-call-start").toggleClass("customer-call-start-small");
+      if ($(".customer-call-start").hasClass("customer-call-start-small")){
+        $('.exit-full-video-img')[0].src='img/full-screen-icon.svg';
+      }
+      else {
+        $('.exit-full-video-img')[0].src='img/fullscreen-exit.svg';
+      }
       $(".customer-info-video").toggleClass("hide");
       $(".right-block").toggleClass("hide");
       $(".new-note-video").toggleClass("hide");
-    });
+
+      if($(window).width() < 645) {
+
+        $(".right-block").removeClass("hide");
+
+        $(".last-consultations").hide(1);
+        $(".waiting-customers").hide(1);
+        $(".timeline-customers").hide(1);
+        $(".customer").hide(1);
+        $(".notes").hide(1);
+
+        $(".show-video").click(function () {
+          $(".video-full").show(1);
+          $(".customer").hide(1);
+          $(".notes").hide(1);
+          $(".show-video").addClass('active');
+          $(".show-info").removeClass('active');
+          $(".show-notes").removeClass('active');
+
+        });
+        $(".show-info").click(function () {
+          $(".video-full").hide(1);
+          $(".customer").show(1);
+          $(".notes").hide(1);
+          $(".show-video").removeClass('active');
+          $(".show-info").addClass('active');
+          $(".show-notes").removeClass('active');
+
+        });
+        $(".show-notes").click(function () {
+          $(".video-full").hide(1);
+          $(".customer").hide(1);
+          $(".notes").show(1);
+          $(".show-video").removeClass('active');
+          $(".show-info").removeClass('active');
+          $(".show-notes").addClass('active');
+
+        });
+
+      } else {
+        $(".right-block").removeClass("hide");
+        $(".last-consultations").show(1);
+        $(".waiting-customers").hide(1);
+        $(".timeline-customers").hide(1);
+        $(".customer").show(1);
+        $(".notes").show(1);
+      }
+     });
 
     $(".video-stop").click(function () {
       $(".video-doctor").toggleClass("hide");
