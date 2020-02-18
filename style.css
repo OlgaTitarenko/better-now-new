@@ -28,7 +28,7 @@ li{
     width: 30%;
 }
 .head-logo img{
-    width: 100%;
+    width: 126px;
 }
 .head-user{
     display: flex;
@@ -78,9 +78,13 @@ main{
 
 /*login*/
 .login{
-    padding-top: 189px;
-    padding-bottom: 189px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
+
 .login-block{
     border-radius: 3px;
     box-shadow: 10px 10px 20px 0 rgba(191, 205, 229, 0.1), 10px 10px 20px 0 rgba(183, 188, 218, 0.12);
@@ -135,6 +139,9 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     position: absolute;
     top: calc(50% - 12px);
     right: 20px;
+}
+.form-group .form-group__password .password-icon-visible{
+    top: calc(50% - 15px);
 }
 
 .login-block__form .btn-group-vertical{
@@ -205,15 +212,30 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     color: #ffffff;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
+    .login{
+        margin-top: 30px;
+    }
+    .login-block{
+        padding: 54px 59px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
     .login{
         padding-top: 0;
         padding-bottom: 0;
+        align-items: flex-start;
     }
     .login-block{
-        background-color: rgba(0,0,0,0);
+        background-color: inherit;
+        max-width: 380px;
         display: block;
-        padding: 30px;
+        box-shadow: none;
+        padding: 30px 15px;
+    }
+    .login-block__text h1{
+        font-size: 22px;
     }
     .login-block__text h2{
         font-size: 25px;
@@ -225,6 +247,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
     .btn-group-vertical .btn-google{
         background-color: #ffffff;
         font-size: 12px;
+        letter-spacing: 0.05px;
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -362,7 +385,6 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .call-status .active-status img:nth-child(2){
     display: block;
 }
-
 
 .last-consultations{
     padding: 24px;
@@ -589,7 +611,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .customer-call{
     background-image: radial-gradient(circle at 50% 108%, rgba(171,177,210,0.45), rgba(126,134,186,0.45) 73%);
     top: 0;
-    display: block;
+    display: none;
 }
 .customer-call__hide{
     display: none;
