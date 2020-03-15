@@ -379,6 +379,7 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 }
 .call-status .active-status{
     opacity: 1;
+    cursor: pointer;
 }
 .call-status .active-status img:nth-child(1){
   display: none;
@@ -386,7 +387,12 @@ input:invalid:not(:placeholder-shown) + .email-wrong {
 .call-status .active-status img:nth-child(2){
     display: block;
 }
-
+.call-status .status-img{
+    cursor: pointer;
+}
+.call-status .unavailable{
+    cursor: no-drop;
+}
 .last-consultations{
     padding: 24px;
 }
